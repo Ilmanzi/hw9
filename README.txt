@@ -1,4 +1,4 @@
-Welcome To EXPRESS JS apps
+Welcome To EXPRESS JS app
 
 First thing to do is make sure you have installed all the modules
 ->
