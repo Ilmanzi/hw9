@@ -20,7 +20,10 @@ Example
 ->
 http://localhost:3000/login
 
-Remember to login, because every endpoints need a token excepet Login and Register
+Remember to login, because every endpoints need a token
 This is an example of listed user.
+
 waldred2d@thetimes.co.uk <- email
 yVNQzjaQ <- Password
+
+thank you!
