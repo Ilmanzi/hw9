@@ -29,25 +29,6 @@ app.use(routerUsers)
 app.use(routerLogin)
 app.use(routerRegis)
 
-// const swaggerOptions =  {
-//   definition: {
-//     openapi: '3.0.0',
-//     info: {
-//       title: 'Hw9',
-//       version: '0.1.0'
-//     },
-//     servers: [
-//       {
-//         url: 'http://localhost:3000',
-//         description: 'Local development server'
-//       },
-//     ],
-//   },
-//   apis: ['./mover/*']
-// };
-// const specs = swaggerJSDoc(swaggerOptions);
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, { explorer: true}));
-
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(PORT, () => {
