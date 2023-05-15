@@ -6,57 +6,6 @@ var loginRoute = express.Router();
 
 require('dotenv').config();
 
-// Define a Swagger schema for the JWT token
-/**
- * @swagger
- * components:
- *   securitySchemes:
- *     bearerAuth:
- *       type: http
- *       scheme: bearer
- *       bearerFormat: JWT
- *   schemas:
- *     Token:
- *       type: object
- *       properties:
- *         token:
- *           type: string
- */
-
-// Define a Swagger operation for the POST /login route
-/**
- * @swagger
- * /login:
- *   post:
- *     summary: Log in a user
- *     description: Log in a user and generate a JWT token.
- *     tags:
- *       - authentication
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               email:
- *                 type: string
- *               password:
- *                 type: string
- *             required:
- *               - email
- *               - password
- *     responses:
- *       '200':
- *         description: JWT token
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Token'
- *       '401':
- *         description: Invalid email or password
- */
-
 loginRoute.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
