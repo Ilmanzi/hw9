@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-var morgan = require('morgan');
+const morgan = require('morgan');
 
 const swaggerDocument = require('./config/swagger_output.json'); // Replace with the path to your generated Swagger specification file
 const routerMovies = require('./mover/movies.js');

@@ -8,7 +8,7 @@ The database is running on PostgreSQL and try to restore the .sql file
 ->
 movies-database.sql
 
-run the apps with :
+run the apps with this code inside the terminal :
 ->
 npm run yokbisayok
 
@@ -20,4 +20,7 @@ Example
 ->
 http://localhost:3000/login
 
-Remember to login, because every endpoints need a token
+Remember to login, because every endpoints need a token excepet Login and Register
+This is an example of listed user.
+waldred2d@thetimes.co.uk <- email
+yVNQzjaQ <- Password
